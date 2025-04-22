@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ürün Detay</title>
+  <style>
+    body { font-family: Arial; padding: 30px; }
+    .product {
+      max-width: 600px; margin: auto; text-align: center;
+      border: 1px solid #ddd; border-radius: 10px; padding: 20px;
+    }
+    .product img { max-width: 100%; border-radius: 10px; height: auto; }
+  </style>
+</head>
+<body>
+  <div class="product" id="product-container">Yükleniyor...</div>
+
+  <script>
+    const products = {
+"led1": { name: "5mm Beyaz Led", img: "images/led1.jpg", price: "2,50", desc: "Yüksek parlaklık, 5mm beyaz LED." },
+"kablo1": { name: "USB Kablo", img: "images/kablo1.jpg", price: "15,00", desc: "Veri ve şarj için USB kablo." },
+
+    };
+
+    const url = new URLSearchParams(window.location.search);
+    const id = url.get("id");
+    const p = products[id];
+
+    document.getElementById("product-container").innerHTML = p ? `
+      <h2>${p.name}</h2>
+      <img src="${p.img}" alt="${p.name}">
+      <p>${p.desc}</p>
+      <p><strong>${p.price} ₺</strong></p>
+      <p><a href="index.html">← Geri Dön</a></p>
+    ` : "<p>Ürün bulunamadı.</p>";
+  </script>
+</body>
+</html>

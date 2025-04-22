@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplifikatör Ürünleri - ARZUN ELEKTRONİK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Ana sayfadaki header aynı -->
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Amplifikatör Ürünleri</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Ana Sayfa</a> > 
+                <a href="urunler.html">Ürünler</a> > 
+                <span>Amplifikatör</span>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="product-list">
+        <div class="container">
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="sort-filter">Sırala:</label>
+                    <select id="sort-filter">
+                        <option value="default">Varsayılan</option>
+                        <option value="price-low">Fiyat: Düşükten Yükseğe</option>
+                        <option value="price-high">Fiyat: Yüksekten Düşüğe</option>
+                        <option value="name-asc">İsim: A-Z</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group search-group">
+                    <input type="text" id="product-search" placeholder="Amplifikatör ara...">
+                    <button class="search-btn"><img src="images/icons/search.png" alt="Ara"></button>
+                </div>
+            </div>
+            
+            <div class="subcategories">
+                <h3>Amplifikatör Alt Kategorileri:</h3>
+                <div class="subcategory-tags">
+                    <a href="#" class="tag active">Tümü</a>
+                    <a href="#" class="tag">Güç Amplifikatörleri</a>
+                    <a href="#" class="tag">Ön Amplifikatörler</a>
+                    <a href="#" class="tag">Tümleşik Amplifikatörler</a>
+                    <a href="#" class="tag">Telli Amplifikatörler</a>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Amplifikatör Ürün Örnekleri -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/products/amp1.jpg" alt="XYZ Model Amplifikatör">
+                        <span class="badge-new">YENİ</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">XYZ Model 100W Güç Amplifikatörü</h3>
+                        <div class="product-meta">
+                            <span class="product-price">₺1,250.00</span>
+                            <span class="product-stock in-stock">Stokta</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm">Sepete Ekle</button>
+                            <a href="urun-detay.html" class="btn btn-sm btn-outline">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diğer amplifikatör ürünleri -->
+                
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link disabled">&laquo;</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">&raquo;</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="category-description">
+        <div class="container">
+            <h2>Amplifikatör Çeşitleri</h2>
+            <p>ARZUN ELEKTRONİK olarak geniş amplifikatör yelpazemizle hizmetinizdeyiz. Profesyonel ses sistemlerinden ev kullanımına uygun modellere kadar çeşitli amplifikatör seçeneklerini bulabilirsiniz. Tüm ürünlerimiz orijinal ve garantilidir.</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <!-- Ana sayfadaki footer aynı -->
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
